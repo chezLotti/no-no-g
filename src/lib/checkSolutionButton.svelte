@@ -15,7 +15,8 @@
       const solvedField = solutionTry[index] == 1 ? 1 : 0
       checkedSolution.push(field - solvedField)
     })
-    setSolved(checkedSolution.some((elem) => elem <= 0))    
+    setSolved(!checkedSolution.some((elem) => elem != 0))
+    console.log(!checkedSolution.some((elem) => elem != 0))    
   }
 </script>
 
